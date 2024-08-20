@@ -1004,57 +1004,57 @@
       return Element.prototype.querySelector.call(element, selector);
     },
 
-    children(element, selector) {
-      return [].concat(...element.children).filter(child => child.matches(selector));
-    },
+    // children(element, selector) {
+    //   return [].concat(...element.children).filter(child => child.matches(selector));
+    // },
 
-    parents(element, selector) {
-      const parents = [];
-      let ancestor = element.parentNode;
+    // parents(element, selector) {
+    //   const parents = [];
+    //   let ancestor = element.parentNode;
 
-      while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
-        if (ancestor.matches(selector)) {
-          parents.push(ancestor);
-        }
+    //   while (ancestor && ancestor.nodeType === Node.ELEMENT_NODE && ancestor.nodeType !== NODE_TEXT) {
+    //     if (ancestor.matches(selector)) {
+    //       parents.push(ancestor);
+    //     }
 
-        ancestor = ancestor.parentNode;
-      }
+    //     ancestor = ancestor.parentNode;
+    //   }
 
-      return parents;
-    },
+    //   return parents;
+    // },
 
-    prev(element, selector) {
-      let previous = element.previousElementSibling;
+    // prev(element, selector) {
+    //   let previous = element.previousElementSibling;
 
-      while (previous) {
-        if (previous.matches(selector)) {
-          return [previous];
-        }
+    //   while (previous) {
+    //     if (previous.matches(selector)) {
+    //       return [previous];
+    //     }
 
-        previous = previous.previousElementSibling;
-      }
+    //     previous = previous.previousElementSibling;
+    //   }
 
-      return [];
-    },
+    //   return [];
+    // },
 
-    next(element, selector) {
-      let next = element.nextElementSibling;
+    // next(element, selector) {
+    //   let next = element.nextElementSibling;
 
-      while (next) {
-        if (next.matches(selector)) {
-          return [next];
-        }
+    //   while (next) {
+    //     if (next.matches(selector)) {
+    //       return [next];
+    //     }
 
-        next = next.nextElementSibling;
-      }
+    //     next = next.nextElementSibling;
+    //   }
 
-      return [];
-    },
+    //   return [];
+    // },
 
-    focusableChildren(element) {
-      const focusables = ['a', 'button', 'input', 'textarea', 'select', 'details', '[tabindex]', '[contenteditable="true"]'].map(selector => `${selector}:not([tabindex^="-"])`).join(', ');
-      return this.find(focusables, element).filter(el => !isDisabled(el) && isVisible(el));
-    }
+    // focusableChildren(element) {
+    //   const focusables = ['a', 'button', 'input', 'textarea', 'select', 'details', '[tabindex]', '[contenteditable="true"]'].map(selector => `${selector}:not([tabindex^="-"])`).join(', ');
+    //   return this.find(focusables, element).filter(el => !isDisabled(el) && isVisible(el));
+    // }
 
   };
 
