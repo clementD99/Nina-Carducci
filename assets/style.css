@@ -26,11 +26,12 @@ body {
   display: flex;
   list-style-type: none;
   font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 0;  
 }
 
 .nav li {
   padding-inline: 10px;
+  cursor: pointer;           /* Ajout d'un curseur */
 }
 
 .nav a {
