@@ -50,20 +50,16 @@
   };
   $.fn.mauGallery.listeners = function (options) {
     $(".gallery-item").on("click", function () {
-      if (options.lightBox && $(this).prop("tagName") === "IMG") {
-        $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
-      } else {
-        return;
-      }
+     
     });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
-    $(".gallery").on("click", ".mg-prev", () =>
-      $.fn.mauGallery.methods.prevImage(options.lightboxId)
-    );
-    $(".gallery").on("click", ".mg-next", () =>
-      $.fn.mauGallery.methods.nextImage(options.lightboxId)
-    );
+    // $(".gallery").on("click", ".mg-prev", () =>
+    //   $.fn.mauGallery.methods.prevImage(options.lightboxId)
+    // );
+    // $(".gallery").on("click", ".mg-next", () =>
+    //   $.fn.mauGallery.methods.nextImage(options.lightboxId)
+    // );
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
@@ -174,13 +170,7 @@
       let index = 0,
         next = null;
 
-      $(imagesCollection).each(function (i) {
-        if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i + 1;
-        }
-      });
-      next = imagesCollection[index] || imagesCollection[0];
-      $(".lightboxImage").attr("src", $(next).attr("src"));
+      
     },
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
