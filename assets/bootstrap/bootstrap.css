@@ -472,13 +472,22 @@ textarea {
   border: 0 !important;
 }
 
-.d-block {
-  display: block !important;
+/* ----- Code pour les images ----- */
+
+/* .d-block {
+  display: block;
 }
 
 .w-100 {
-  width: 100% !important;
+  width: 100%;
+} */
+
+img {
+  width: 100%;
+  height: auto;
 }
+
+/* ----- FIN Code pour les images ----- */
 
 .my-4 {
   margin-top: 1.5rem !important;
