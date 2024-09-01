@@ -220,15 +220,6 @@
       $(this).addClass("active-tag active");
 
       var tag = $(this).data("images-toggle");
-
-      $(".gallery-item").each(function () {
-        $(this).parents(".item-column").hide();
-        if (tag === "all") {
-          $(this).parents(".item-column").show(300);
-        } else if ($(this).data("gallery-tag") === tag) {
-          $(this).parents(".item-column").show(300);
-        }
-      });
     },
   };
 })(jQuery);
