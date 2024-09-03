@@ -168,6 +168,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  width: 100%;
 }
 
 label {
@@ -265,7 +266,7 @@ textarea {
   }
 }
 
-.row {  /* A GARDER */
+.row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -481,11 +482,6 @@ textarea {
 .w-100 {
   width: 100%;
 } */
-
-img {
-  width: 100%;
-  height: auto;
-}
 
 /* ----- FIN Code pour les images ----- */
 
