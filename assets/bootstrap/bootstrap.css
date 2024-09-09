@@ -169,6 +169,7 @@ img,
 svg {
   vertical-align: middle;
   width: 100%;
+  object-fit: cover;
 }
 
 label {
@@ -472,18 +473,6 @@ textarea {
   white-space: nowrap !important;
   border: 0 !important;
 }
-
-/* ----- Code pour les images ----- */
-
-/* .d-block {
-  display: block;
-}
-
-.w-100 {
-  width: 100%;
-} */
-
-/* ----- FIN Code pour les images ----- */
 
 .my-4 {
   margin-top: 1.5rem !important;
