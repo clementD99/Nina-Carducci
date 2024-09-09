@@ -26,12 +26,12 @@ body {
   display: flex;
   list-style-type: none;
   font-size: 14px;
-  margin-bottom: 0;  
+  margin-bottom: 0;
 }
 
 .nav li {
   padding-inline: 10px;
-  cursor: pointer;           /* Ajout d'un curseur */
+  cursor: pointer;
 }
 
 .nav a {
@@ -68,10 +68,10 @@ body {
   z-index: 0;
 }
 
-/* .picture img {
+.picture img {
   width: 100%;
-  height: auto;
-} */
+  height: 100%;
+}
 
 #about-me {
   flex: 2;
@@ -93,7 +93,7 @@ body {
 }
 
 #gallery {
-  min-height: 100vh;  
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -105,7 +105,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #8C750E;
   border-radius: 0;
 }
 .nav-pills .nav-link {
