@@ -113,6 +113,17 @@ h1,
   }
 }
 
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+}
+
 h3,
 .h3 {
   font-size: calc(1.3rem + 0.6vw);
@@ -371,6 +382,11 @@ textarea {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }
 
 .carousel-item.active,
