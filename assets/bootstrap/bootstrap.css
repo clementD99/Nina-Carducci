@@ -700,6 +700,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+  color: rgb(230, 1, 1);
 }
 
 .carousel-control-prev-icon {
@@ -758,6 +759,7 @@ textarea {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+  background-color: rgb(180, 74, 74);
 }
 
 .my-4 {
